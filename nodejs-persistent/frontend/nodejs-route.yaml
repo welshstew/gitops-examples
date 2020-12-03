@@ -1,0 +1,22 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app: nodejs-mongo-persistent
+    tier: frontend
+  name: nodejs-mongo-persistent
+  namespace: nodejs
+spec:
+  host: ""
+  port:
+    targetPort: 8080
+  to:
+    kind: Service
+    name: nodejs-mongo-persistent
+    weight: 100
+status:
+  ingress:
+  - conditions:
+    - status: "True"
+      type: Admitted

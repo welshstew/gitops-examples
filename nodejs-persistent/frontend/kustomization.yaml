@@ -1,0 +1,7 @@
+bases:
+- ../base
+
+resources:
+- nodejs-deploy.yaml
+- nodejs-route.yaml
+- nodejs-svc.yaml

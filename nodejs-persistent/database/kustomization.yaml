@@ -1,0 +1,6 @@
+bases:
+- ../base
+
+resources:
+- nodejs-db-svc.yaml
+- nodejs-db.yaml

@@ -1,0 +1,6 @@
+bases:
+- ../base
+
+resources:
+- nodejs-namespace.yaml
+- nodejs-quota.yaml

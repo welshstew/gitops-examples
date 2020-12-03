@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: nodejs-mongo-persistent
+    tier: database
+  name: mongodb
+  namespace: nodejs
+spec:
+  ports:
+  - name: mongodb
+    port: 27017
+    targetPort: 27017
+  selector:
+    name: mongodb
