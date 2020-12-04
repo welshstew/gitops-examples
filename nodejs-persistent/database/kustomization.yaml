@@ -4,3 +4,5 @@ bases:
 resources:
 - nodejs-db-svc.yaml
 - nodejs-db.yaml
+- nodejs-pvc.yaml
+- nodejs-secret.yaml
