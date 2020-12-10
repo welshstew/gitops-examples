@@ -6,7 +6,7 @@ metadata:
     tier: frontend
   name: nodejs-mongo-persistent
 spec:
-  replicas: 15
+  replicas: 12
   selector:
     matchLabels:
       name: nodejs-mongo-persistent
