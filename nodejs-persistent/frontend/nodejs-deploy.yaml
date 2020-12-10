@@ -9,13 +9,15 @@ spec:
   replicas: 12
   selector:
     matchLabels:
-      name: nodejs-mongo-persistent
+      app: nodejs-mongo-persistent
+      tier: frontend
   strategy:
     type: Recreate
   template:
     metadata:
       labels:
-        name: nodejs-mongo-persistent
+        app: nodejs-mongo-persistent
+        tier: frontend
       name: nodejs-mongo-persistent
     spec:
       containers:
